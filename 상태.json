@@ -1,9 +1,10 @@
 {
-  "_설명": "바이브 코치가 세션 시작 시 가장 먼저 읽는 파일. 학습자가 지금 몇 스텝인지 알려주는 '진실의 원천'.",
-  "current_step": "스텝00-준비-프로젝트-폴더-만들기",
+  "_설명": "바이브 코치가 세션 시작 시 가장 먼저 읽는 파일. 선택한 과정과 현재 스텝을 알려주는 '진실의 원천'.",
+  "selected_track": "",
+  "current_step": "00_시작하기",
   "step_index": 0,
-  "step_title": "준비 — 프로젝트 폴더 만들기",
+  "step_title": "공통 준비 — Orca·AI CLI·GitHub·작업 의뢰법",
   "completed_steps": [],
   "product_idea": "",
-  "updated": "2026-07-20"
+  "updated": "2026-09-18"
 }

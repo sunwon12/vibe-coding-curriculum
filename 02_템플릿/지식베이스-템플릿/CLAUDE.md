@@ -1,7 +1,7 @@
 # CLAUDE.md — 내 지식베이스 규칙
 
-> 이 파일은 AI(Cursor·Antigravity·Claude Code 등)가 이 폴더를 열었을 때 **가장 먼저 읽고 따르는 규칙**이다.
-> (Claude Code는 `CLAUDE.md`, Cursor·Antigravity도 이 파일을 컨텍스트로 읽는다.)
+> 이 파일은 AI(Codex CLI·Claude Code 등)가 이 폴더를 열었을 때 **가장 먼저 읽고 따르는 규칙**이다.
+> (Claude Code는 `CLAUDE.md`를 읽고, Codex CLI에서는 같은 규칙을 `AGENTS.md`로 복사해 쓴다.)
 > 나는 코딩을 잘 모르는 사용자다. 어려운 건 네가 대신 하고, 나에겐 쉬운 말로 알려줘라.
 
 ## 이 저장소가 뭔가
