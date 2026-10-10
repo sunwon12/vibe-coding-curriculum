@@ -3,7 +3,7 @@ title: "Orca와 AI 도구 설치하기"
 type: 개발
 tags: ["바이브코딩", "커리큘럼", "비개발자", "환경설정", "AI"]
 created: 2026-07-20
-updated: 2026-09-18
+updated: 2026-10-10
 summary: "비개발자가 Orca를 공통 작업 화면으로 설치하고 Codex CLI나 Claude Code 하나를 연결해 로컬 폴더를 읽히는 운영체제별 준비 단계"
 ---
 
@@ -187,8 +187,8 @@ Claude를 골랐다면: claude
 ```
 
 처음 실행한 Orca가 홈 폴더 접근을 물으면 허용하고, 발견한 Codex·Claude 설정을 가져옵니다. 그다음
-**Add Repo**에서 `index.md`와 `AGENTS.md`가 있는 커리큘럼 폴더를 고릅니다. ZIP으로 받아 아직 Git 저장소가
-아니라서 추가되지 않으면 [[03_GitHub로-체크포인트와-동기화-만들기]]를 먼저 끝내고 다시 추가합니다.
+**Add Repo**에서 `index.md`와 `AGENTS.md`가 있는 커리큘럼 폴더를 고릅니다. 폴더가 아직 내 컴퓨터에 없으면
+[[03_GitHub로-체크포인트와-동기화-만들기]]에서 내 Fork를 받은 뒤 다시 추가합니다.
 
 연결한 저장소 옆의 `+`를 누르고 설치한 **Codex** 또는 **Claude Code**를 고르면, Orca가 그 작업 폴더에서
 AI를 실행합니다.
