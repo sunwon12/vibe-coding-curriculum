@@ -3,11 +3,8 @@ title: "Orca와 AI 도구 설치하기"
 type: 개발
 tags: ["바이브코딩", "커리큘럼", "비개발자", "환경설정", "AI"]
 created: 2026-07-20
-updated: 2026-10-22
-summary: "설치 전에 계정 하나·컴퓨터 하나·폴더 하나를 정한 뒤, 비개발자가 Orca를 공통 작업 화면으로 설치하고 Codex CLI나 Claude Code 하나를 연결해 로컬 폴더를 읽히는 운영체제별 준비 단계"
-review_date: null
-review_interval: 7d
-last_reviewed: null
+updated: 2026-10-10
+summary: "비개발자가 Orca를 공통 작업 화면으로 설치하고 Codex CLI나 Claude Code 하나를 연결해 로컬 폴더를 읽히는 운영체제별 준비 단계"
 ---
 
 > 원문: [Orca 설치](https://www.onorca.dev/docs/install) · [Orca GitHub README](https://github.com/stablyai/orca/blob/main/README.md) · [Orca 첫 세션](https://www.onorca.dev/docs/first-session) · [OpenAI Codex CLI](https://developers.openai.com/codex/cli/) · [Codex AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md) · [Claude Code 터미널 가이드](https://code.claude.com/docs/en/terminal-guide) · [Claude Code CLAUDE.md](https://code.claude.com/docs/en/memory)
@@ -82,21 +79,6 @@ flowchart LR
   그 상위의 `CLAUDE.md`를 시작할 때 읽고, 하위 폴더의 규칙은 그 폴더의 파일을 읽을 때 추가로 불러옵니다.
 - 홈 폴더처럼 너무 넓은 곳에서 시작하면 관계없는 맥락이 섞이고, 너무 깊은 하위 폴더에서 시작하면 전체 지도를
   놓칠 수 있으므로 루트에서 시작하는 습관이 좋습니다.
-
-## 0. 설치 전 점검 — 계정 하나, 컴퓨터 하나, 폴더 하나
-
-첫날 시간을 가장 많이 먹는 건 설치가 아니라 **내 계정과 파일이 어디 있는지 모르는 것**입니다. 설치 전에 세 가지만 정합니다.
-
-| 정할 것 | 기준 |
-| --- | --- |
-| **계정 하나** | 회사 구글·개인 지메일·네이버 중 **AI 결제·GitHub·드라이브를 같은 계정**으로. 남이 접속할 수 있는 계정이면 개인 계정으로 |
-| **컴퓨터 하나** | 데스크톱·노트북이 둘이면 **주로 쓰는 것**에서 먼저 설치하고, 다른 기기는 GitHub로 이어 받음([[03_GitHub로-체크포인트와-동기화-만들기]]) |
-| **폴더 하나** | 커리큘럼과 지식베이스를 둘 자리(바탕화면 또는 문서). 구글 드라이브·원드라이브 동기화 폴더 **안에는 두지 않음** — 동기화 앱과 git이 서로 복사해 파일이 늘어남 |
-
-- 터미널에 뜨는 이름(`C:\Users\이름`)은 컴퓨터 사용자 이름이라 계정과 무관합니다. 바꾸지 않아도 됩니다.
-- 로컬 디스크(C:·D:)는 내 컴퓨터 안, 구글 드라이브·원드라이브는 클라우드, USB는 꽂은 것입니다. 구글 드라이브 데스크톱이 깔려 있으면 탐색기의 그 폴더는 **이미 로컬에 있는 사본**이라 자료를 다시 받을 필요가 없습니다.
-- 결제·비밀번호·전화번호는 **내가 직접 입력**합니다. 코치나 강사가 대신 받아 적지 않습니다.
-- 요금제는 **가장 싼 유료**로 시작합니다. 올려도 더 똑똑해지는 게 아니라 쓸 수 있는 양이 늘어나는 것이라, 부족할 때 올리면 됩니다. 모델·한도는 [[자주-막히는것-FAQ]].
 
 ## 1. Orca 설치하기
 
