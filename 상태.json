@@ -2,9 +2,9 @@
   "_설명": "바이브 코치가 세션 시작 시 가장 먼저 읽는 파일. 선택한 과정과 현재 스텝을 알려주는 '진실의 원천'.",
   "selected_track": "AI",
   "current_step": "00_시작하기",
-  "step_index": 3,
-  "step_title": "공통 준비 03 — GitHub 체크포인트와 동기화",
-  "completed_steps": ["00~01", "02"],
+  "step_index": 4,
+  "step_title": "공통 준비 04 — AI에게 일 맡기는 부탁 쓰기",
+  "completed_steps": ["00~01", "02", "03"],
   "product_idea": "",
-  "updated": "2026-11-02"
+  "updated": "2026-11-03"
 }
