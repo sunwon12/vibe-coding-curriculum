@@ -1,11 +1,11 @@
 ---
-title: "03_레퍼런스 인덱스"
+title: "04_레퍼런스 인덱스"
 type: index
-summary: "03_레퍼런스 폴더가 직접 소유한 Markdown 문서 4개의 자동 생성 색인."
+summary: "04_레퍼런스 폴더가 직접 소유한 Markdown 문서 4개의 자동 생성 색인."
 generated_by: scripts/generate_folder_indexes.py
 ---
 
-# 03_레퍼런스 인덱스
+# 04_레퍼런스 인덱스
 
 <!-- folder-index:auto:start -->
 > 상위 지도: [가장 가까운 상위 `_index.md`](../_index.md)
