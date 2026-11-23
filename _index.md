@@ -20,7 +20,7 @@ created: 2026-07-20
 [시작] 00_시작하기에서 AI CLI·GitHub·작업 의뢰법을 준비하고 목적을 고른다
         │
         ├─ [AI 스텝] 04_AI_스텝
-        │    지식베이스 → AI 이해 → 자동화 후보 → 암묵지 → 주입·호출 설계 → 손발 → Skill
+        │    지식베이스 → AI 이해 → 암묵지 → 주입·호출 설계 → 손발 → Skill → 자동화 후보
         │    결과 = 내 일을 내 기준으로 반복 수행하는 AI
         │
         └─ [프로덕트 스텝] 05_프로덕트_스텝
@@ -86,11 +86,11 @@ created: 2026-07-20
 
 - [AI00 지식베이스 깔고 AI와 연결하기](04_AI_%EC%8A%A4%ED%85%9D/01_AI00-%EC%A7%80%EC%8B%9D%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B9%94%EA%B3%A0-AI%EC%99%80-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0.md)
 - [AI01 AI가 일하는 방식 이해하기](04_AI_%EC%8A%A4%ED%85%9D/02_AI01-AI%EA%B0%80-%EC%9D%BC%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0.md)
-- [AI02 내 일에서 자동화 후보 찾기](04_AI_%EC%8A%A4%ED%85%9D/03_AI02-%EB%82%B4-%EC%9D%BC%EC%97%90%EC%84%9C-%EC%9E%90%EB%8F%99%ED%99%94-%ED%9B%84%EB%B3%B4-%EC%B0%BE%EA%B8%B0.md)
-- [AI03 AI가 모르는 암묵지 주입하기](04_AI_%EC%8A%A4%ED%85%9D/04_AI03-AI%EA%B0%80-%EB%AA%A8%EB%A5%B4%EB%8A%94-%EC%95%94%EB%AC%B5%EC%A7%80-%EC%A3%BC%EC%9E%85%ED%95%98%EA%B8%B0.md)
-- [AI04 주입할 것과 읽힐 때 설계하기](04_AI_%EC%8A%A4%ED%85%9D/05_AI04-%EC%A3%BC%EC%9E%85%ED%95%A0-%EA%B2%83%EA%B3%BC-%EC%9D%BD%ED%9E%90-%EB%95%8C-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0.md)
-- [AI05 AI에게 도구로 손발 달아주기](04_AI_%EC%8A%A4%ED%85%9D/06_AI05-AI%EC%97%90%EA%B2%8C-%EB%8F%84%EA%B5%AC%EB%A1%9C-%EC%86%90%EB%B0%9C-%EB%8B%AC%EC%95%84%EC%A3%BC%EA%B8%B0.md)
-- [AI06 반복 작업을 Skill로 만들기](04_AI_%EC%8A%A4%ED%85%9D/07_AI06-%EB%B0%98%EB%B3%B5%EC%9E%91%EC%97%85%EC%9D%84-Skill%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
+- [AI02 AI가 모르는 암묵지 주입하기](04_AI_%EC%8A%A4%ED%85%9D/03_AI02-AI%EA%B0%80-%EB%AA%A8%EB%A5%B4%EB%8A%94-%EC%95%94%EB%AC%B5%EC%A7%80-%EC%A3%BC%EC%9E%85%ED%95%98%EA%B8%B0.md)
+- [AI03 주입할 것과 읽힐 때 설계하기](04_AI_%EC%8A%A4%ED%85%9D/04_AI03-%EC%A3%BC%EC%9E%85%ED%95%A0-%EA%B2%83%EA%B3%BC-%EC%9D%BD%ED%9E%90-%EB%95%8C-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0.md)
+- [AI04 AI에게 도구로 손발 달아주기](04_AI_%EC%8A%A4%ED%85%9D/05_AI04-AI%EC%97%90%EA%B2%8C-%EB%8F%84%EA%B5%AC%EB%A1%9C-%EC%86%90%EB%B0%9C-%EB%8B%AC%EC%95%84%EC%A3%BC%EA%B8%B0.md)
+- [AI05 반복 작업을 Skill로 만들기](04_AI_%EC%8A%A4%ED%85%9D/06_AI05-%EB%B0%98%EB%B3%B5%EC%9E%91%EC%97%85%EC%9D%84-Skill%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
+- [AI06 내 일에서 자동화 후보 찾기](04_AI_%EC%8A%A4%ED%85%9D/07_AI06-%EB%82%B4-%EC%9D%BC%EC%97%90%EC%84%9C-%EC%9E%90%EB%8F%99%ED%99%94-%ED%9B%84%EB%B3%B4-%EC%B0%BE%EA%B8%B0.md)
 
 ## 05_프로덕트_스텝/02_키우기 (첫 배포 뒤 서비스를 키우는 과정)
 
@@ -103,7 +103,7 @@ created: 2026-07-20
 - 이 폴더는 PKM 노트이자 **그대로 clone해서 강습생에게 주는 레포**다. 그래서 `README.md`·`AGENTS.md` 등은
   일반 레포 컨벤션을 따르고, 스텝/레퍼런스 파일만 라이트 프론트매터(복습 필드 없음)를 갖는다.
 - 커리큘럼을 고칠 땐 `01_진행상태.md`의 스텝 목록과 이 `_index.md` 표를 함께 갱신한다.
-- AI 스텝 수업 자료 PDF는 [`04_AI_스텝/01_AI-스텝-수업자료.pdf`](04_AI_스텝/01_AI-스텝-수업자료.pdf)다. 스텝 문서 7개를 순서대로 엮은 출력용 자료다.
+- AI 스텝 수업 자료 PDF는 [`04_AI_스텝/01_AI-스텝-수업자료.pdf`](04_AI_스텝/01_AI-스텝-수업자료.pdf)다. GitHub 준비 문서와 스텝 문서 7개를 순서대로 엮은 출력용 자료다.
 
 <!-- folder-index:auto:start -->
 > 시작 안내: [README](README.md)
