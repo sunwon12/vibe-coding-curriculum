@@ -152,7 +152,7 @@ flowchart LR
 
 ---
 
-## 오가는 방법 4개, 이게 전부예요
+## 오가는 방법은 이 4개가 전부예요
 
 ```mermaid
 flowchart LR
@@ -216,7 +216,7 @@ gh repo fork sunwon12/vibe-coding-curriculum --clone --default-branch-only
 
 ---
 
-## 반대 방향, 내가 만든 앱을 깃허브에 올리기 (내 방 만들기)
+## 거꾸로 내가 만든 앱을 깃허브에 올리기 (내 방 만들기)
 
 스텝11(배포)에서 하게 될 일이에요. 미리 그림만 잡아 둡시다.
 
