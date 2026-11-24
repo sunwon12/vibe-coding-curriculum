@@ -7,12 +7,12 @@ updated: 2026-11-24
 summary: "비개발자가 Orca를 공통 작업 화면으로 설치하고 Codex CLI나 Claude Code 하나를 연결해 로컬 폴더를 읽히는 운영체제별 준비 단계"
 ---
 
-> 원문: [Orca 설치](https://www.onorca.dev/docs/install) · [Orca GitHub README](https://github.com/stablyai/orca/blob/main/README.md) · [Orca 첫 세션](https://www.onorca.dev/docs/first-session) · [OpenAI Codex CLI](https://developers.openai.com/codex/cli/) · [Codex AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md) · [Claude Code 터미널 가이드](https://code.claude.com/docs/en/terminal-guide) · [Claude Code CLAUDE.md](https://code.claude.com/docs/en/memory)
-> 수집: 2026-09-18 · 확인 범위: Orca의 운영체제별 공식 배포 파일·첫 실행·저장소 연결, AI CLI 설치·로그인, 작업 폴더와 규칙 파일의 관계
+> 원문: [Orca 설치](https://www.onorca.dev/docs/install), [Orca GitHub README](https://github.com/stablyai/orca/blob/main/README.md), [Orca 첫 세션](https://www.onorca.dev/docs/first-session), [OpenAI Codex CLI](https://developers.openai.com/codex/cli/), [Codex AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md), [Claude Code 터미널 가이드](https://code.claude.com/docs/en/terminal-guide), [Claude Code CLAUDE.md](https://code.claude.com/docs/en/memory)
+> 수집: 2026-09-18, 확인 범위: Orca의 운영체제별 공식 배포 파일, 첫 실행, 저장소 연결, AI CLI 설치, 로그인, 작업 폴더와 규칙 파일의 관계
 
 # Orca와 AI 도구 설치하기
 
-이 커리큘럼은 AI 스텝과 서비스 만들기 스텝 **모두 AI가 내 컴퓨터의 파일을 직접 읽고 고칠 수 있어야** 합니다. 비개발자가 파일·AI 대화·터미널·수정 내용을 여러 앱에서 찾아다니지 않도록 **Orca를 공통 작업 화면**으로 쓰고, 그 안에서 **Codex CLI 또는 Claude Code**를 실행합니다.
+이 커리큘럼은 AI 스텝과 서비스 만들기 스텝 **모두 AI가 내 컴퓨터의 파일을 직접 읽고 고칠 수 있어야** 합니다. 비개발자가 파일, AI 대화, 터미널, 수정 내용을 여러 앱에서 찾아다니지 않도록 **Orca를 공통 작업 화면**으로 쓰고, 그 안에서 **Codex CLI 또는 Claude Code**를 실행합니다.
 
 `⭐ 쉬움 · 약 20~30분 · 명령은 그대로 복사하거나 코치와 함께 실행`
 
@@ -22,7 +22,7 @@ summary: "비개발자가 Orca를 공통 작업 화면으로 설치하고 Codex 
 
 | 프로그램 | 하는 일 | 필수인가요? |
 | --- | --- | --- |
-| **Orca** | 폴더·Markdown·AI 대화·터미널·수정 비교를 한 창에서 보는 작업실 | 필수 |
+| **Orca** | 폴더, Markdown, AI 대화, 터미널, 수정 비교를 한 창에서 보는 작업실 | 필수 |
 | **Codex CLI 또는 Claude Code** | Orca 안에서 폴더를 읽고 파일을 만들거나 고치는 AI 작업자 | 둘 중 하나 필수 |
 
 ### Orca는 터미널과 문서 뷰어를 합친 것입니다
@@ -33,23 +33,23 @@ flowchart LR
   V["문서 뷰어<br/>md 파일을 한글 문서처럼 보여 줌"] --> O
 ```
 
-- **문서 뷰어:** 한글 프로그램이 `.hwp` 파일을 보기 좋게 보여 주듯, Orca는 `.md` 파일을 제목·굵은 글씨·표가 살아 있는 모양으로 보여 줍니다. 메모장으로 열면 `#`·`**` 같은 기호가 그대로 보입니다. md가 무엇인지는 [[03_AI는-md-파일이-편하다]]에 있습니다.
-- **터미널:** Codex·Claude는 원래 검은 터미널 창에서 글자로 대화합니다. Orca는 그 터미널을 대화창처럼 보여 줘서 낯선 화면을 덜 마주치게 합니다.
+- **문서 뷰어:** 한글 프로그램이 `.hwp` 파일을 보기 좋게 보여 주듯, Orca는 `.md` 파일을 제목, 굵은 글씨, 표가 살아 있는 모양으로 보여 줍니다. 메모장으로 열면 `#`, `**` 같은 기호가 그대로 보입니다. md가 무엇인지는 [[03_AI는-md-파일이-편하다]]에 있습니다.
+- **터미널:** Codex, Claude는 원래 검은 터미널 창에서 글자로 대화합니다. Orca는 그 터미널을 대화창처럼 보여 줘서 낯선 화면을 덜 마주치게 합니다.
 
 수정 비교나 여러 작업 동시 실행 같은 기능도 있지만 본질은 이 둘입니다. 그래서 별도의 지식베이스 뷰어를 설치하지 않습니다. 지식베이스도 Orca에서 열고, 같은 화면에서 AI에게 읽고 고치게 합니다.
 
-Orca는 AI 모델이 아니라 **AI가 일할 로컬 작업실**입니다. Codex·Claude는 실제로 생각하고 파일을 고치는 작업자입니다.
+Orca는 AI 모델이 아니라 **AI가 일할 로컬 작업실**입니다. Codex, Claude는 실제로 생각하고 파일을 고치는 작업자입니다.
 
 ### AI는 둘 중 하나만 고르세요
 
 | 이런 경우 | 먼저 고를 것 |
 | --- | --- |
-| ChatGPT·Codex를 이미 결제하거나 익숙하게 쓴다 | **Codex CLI** |
+| ChatGPT, Codex를 이미 결제하거나 익숙하게 쓴다 | **Codex CLI** |
 | Claude를 이미 결제하거나 익숙하게 쓴다 | **Claude Code** |
 | 둘 다 처음이다 | 둘 중 가입이 편한 것 하나 |
 | 둘 다 쓸 수 있지만 고민된다 | 같은 실제 작업을 10분씩 시킨 뒤 결과가 맞는 쪽 |
 
-“지금 제일 똑똑한 AI”를 외워 고르지 않습니다. 체감 성능·가격·사용 한도는 계속 바뀌고, 두 도구 모두 이 과정에 충분합니다. **모델 순위보다 내 파일을 정확히 읽히고 필요한 맥락만 주는 방식**이 결과를 더 오래 좌우합니다.
+“지금 제일 똑똑한 AI”를 외워 고르지 않습니다. 체감 성능, 가격, 사용 한도는 계속 바뀌고, 두 도구 모두 이 과정에 충분합니다. **모델 순위보다 내 파일을 정확히 읽히고 필요한 맥락만 주는 방식**이 결과를 더 오래 좌우합니다.
 
 ## 왜 일반 채팅창 대신 Orca와 CLI인가요?
 
@@ -83,7 +83,7 @@ flowchart LR
 ```
 
 - 실행 폴더는 **파일 접근의 절대적인 한계가 아니라 기본 관심사**입니다. 어느 폴더에서 실행했든 경로를
-  정확히 알려 주고 앱·운영체제 권한이 허용하면 컴퓨터의 다른 폴더도 읽을 수 있습니다.
+  정확히 알려 주고 앱과 운영체제 권한이 허용하면 컴퓨터의 다른 폴더도 읽을 수 있습니다.
 - 그래도 `index.md`와 `AGENTS.md` 또는 `CLAUDE.md`가 보이는 **프로젝트 루트**에서 시작하면 AI가 이 프로젝트에
   집중하고 해당 규칙을 자동으로 발견하기 쉬워집니다.
 - Codex는 프로젝트 루트에서 현재 작업 폴더까지 `AGENTS.md`를 차례로 적용합니다. Claude Code는 현재 폴더와
@@ -94,7 +94,7 @@ flowchart LR
 ## 1. Orca 설치하기
 
 Orca를 먼저 설치하되, **처음 실행은 AI 하나를 설치하고 로그인한 뒤** 합니다. 그러면 첫 실행 때 기존
-Codex·Claude 설정을 가져오기 쉽습니다.
+Codex, Claude 설정을 가져오기 쉽습니다.
 
 ### 맥북
 
@@ -132,7 +132,7 @@ Start-Process "https://onorca.dev/download"
 
 터미널 앱을 열고, 앞에서 고른 AI **하나의 명령만** 실행합니다.
 
-### 맥북 — Codex CLI를 골랐다면
+### 맥북 (Codex CLI를 골랐다면)
 
 ```bash
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
@@ -144,7 +144,7 @@ curl -fsSL https://chatgpt.com/codex/install.sh | sh
 codex
 ```
 
-### 맥북 — Claude Code를 골랐다면
+### 맥북 (Claude Code를 골랐다면)
 
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
@@ -160,7 +160,7 @@ claude
 
 시작 메뉴에서 **PowerShell**을 열고, 앞에서 고른 AI **하나의 명령만** 실행합니다. 명령 프롬프트(CMD)가 아니라 PowerShell인지 확인합니다.
 
-### 윈도우 — Codex CLI를 골랐다면
+### 윈도우 (Codex CLI를 골랐다면)
 
 ```powershell
 irm https://chatgpt.com/codex/install.ps1 | iex
@@ -172,7 +172,7 @@ irm https://chatgpt.com/codex/install.ps1 | iex
 codex
 ```
 
-### 윈도우 — Claude Code를 골랐다면
+### 윈도우 (Claude Code를 골랐다면)
 
 ```powershell
 irm https://claude.ai/install.ps1 | iex
@@ -197,7 +197,7 @@ Codex를 골랐다면: codex
 Claude를 골랐다면: claude
 ```
 
-처음 실행한 Orca가 홈 폴더 접근을 물으면 허용하고, 발견한 Codex·Claude 설정을 가져옵니다. 그다음
+처음 실행한 Orca가 홈 폴더 접근을 물으면 허용하고, 발견한 Codex, Claude 설정을 가져옵니다. 그다음
 **Add Repo**에서 `index.md`와 `AGENTS.md`가 있는 커리큘럼 폴더를 고릅니다. 폴더가 아직 내 컴퓨터에 없으면
 [[02_GitHub로-체크포인트와-동기화-만들기]]에서 내 Fork를 받은 뒤 다시 추가합니다.
 
